@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE3MzEwMzQwMDB9.simulatedTokenSignature",
+  "user": {
+    "id": 1,
+    "username": "admin",
+    "email": "admin@recetas.com",
+    "nombre": "Administrador",
+    "rol": "admin"
+  }
+}

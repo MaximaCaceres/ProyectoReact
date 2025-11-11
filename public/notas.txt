@@ -1,0 +1,7 @@
+• Se cambio en 'data' lo de recetas.json, se agrego el tema de las recetas.
+• En 'components' dentro de receta se cambio el nombre de Lista.jsx y se agrego RecetasCarta
+• En pages de receta.jsx se le importo el json con las recetas y se le dijo como usarlo.
+
+
+Errores solucionados;
+☻ Daba un error en pages/receta.jsx y era porque no estaba bien el import.
