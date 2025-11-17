@@ -1,158 +1,284 @@
-# Mi Aplicación React
+# Aplicación de Recetas - [Maxima Caceres]
 
-Una aplicación React moderna construida con Vite que demuestra el uso de React Router, Material UI, Context API y componentes organizados.
+## Descripción
+Aplicación web completa de recetas de cocina desarrollada con React que permite visualizar un catálogo de recetas, acceder al detalle completo de cada una, gestionar favoritos, buscar recetas, filtrar por dificultad y acceder a consejos de cocina. Interfaz moderna, minimalista y completamente responsive construida con Material-UI, con sistema de autenticación y modo oscuro/claro.
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
+- React 19.1.1
+- React Router DOM 7.8.2
+- Material-UI 7.3.2
+- Vite
 
-- **React 19** - Biblioteca de JavaScript para construir interfaces de usuario
-- **Vite 7** - Herramienta de construcción rápida para desarrollo frontend
-- **React Router DOM 7** - Enrutamiento declarativo para React
-- **Material UI 7** - Biblioteca de componentes de React con diseño Material
-- **Context API** - Manejo de estado global de React
+## Instalación
 
-## 📁 Estructura del Proyecto
-
-```
-my-react-app/
-│
-├── public/                     # Archivos estáticos públicos
-│   └── vite.svg
-│
-├── src/                        # Código fuente de la aplicación
-│   ├── assets/                 # Recursos estáticos (imágenes, iconos)
-│   │   └── react.svg
-│   │
-│   ├── components/             # Componentes reutilizables
-│   │   ├── MiBoton.jsx        # Componente de botón personalizado
-│   │   ├── objects/           # Componentes relacionados con objetos
-│   │   │   ├── ObjectsList.jsx
-│   │   │   └── SingleObject.jsx
-│   │   └── receta/            # Componentes relacionados con recetas
-│   │       └── Lista.jsx
-│   │
-│   ├── contexts/              # Contextos de React para manejo de estado
-│   │   ├── ObjectsContext.jsx
-│   │   └── RecetaContext.jsx
-│   │
-│   ├── data/                  # Datos estáticos
-│   │   └── productos.json
-│   │
-│   ├── pages/                 # Componentes de páginas principales
-│   │   ├── objects.jsx
-│   │   └── receta.jsx
-│   │
-│   ├── App.jsx                # Componente principal de la aplicación
-│   ├── App.css                # Estilos del componente App
-│   ├── index.css              # Estilos globales
-│   └── main.jsx               # Punto de entrada de la aplicación
-│
-├── eslint.config.js           # Configuración de ESLint
-├── index.html                 # Plantilla HTML principal
-├── package.json               # Dependencias y scripts del proyecto
-├── package-lock.json          # Lockfile de dependencias
-├── vite.config.js             # Configuración de Vite
-├── GUIA-MATERIAL-UI.md        # Guía de Material UI
-└── GUIA-REACT-ROUTER-DOM.md   # Guía de React Router DOM
-```
-
-## 📦 Instalación y Configuración
-
-### Prerrequisitos
-- Node.js (versión 16 o superior)
-- npm o yarn
-
-### Pasos de Instalación
-
-1. **Clonar el repositorio**
-   ```bash
-   git clone <url-del-repositorio>
-   cd my-react-app
-   ```
-
-2. **Instalar dependencias**
+1. Clonar el repositorio
+2. Instalar dependencias:
    ```bash
    npm install
    ```
-
-3. **Ejecutar la aplicación en modo desarrollo**
+3. Ejecutar el proyecto:
    ```bash
    npm run dev
    ```
+4. Abrir en el navegador: `http://localhost:5173`
 
-La aplicación se abrirá en `http://localhost:5173`
-
-## 🛠️ Comandos Disponibles
-
-| Comando | Descripción |
-|---------|-------------|
-| `npm run dev` | Inicia el servidor de desarrollo con Hot Module Replacement |
-| `npm run build` | Construye la aplicación para producción |
-| `npm run lint` | Ejecuta ESLint para encontrar y reportar problemas en el código |
-| `npm run preview` | Previsualiza la construcción de producción localmente |
-
-## 🏗️ Funcionalidades
-
-### Enrutamiento
-La aplicación utiliza React Router DOM para la navegación entre páginas:
-- **Página Principal (/)**: Redirige a la página de Objects
-- **Objects (/objects)**: Muestra una lista de objetos con funcionalidad CRUD
-- **Receta (/receta)**: Muestra componentes relacionados con recetas
-
-### Manejo de Estado
-- **Context API**: Se utiliza para manejar el estado global
-- **ObjectsContext**: Gestiona el estado de los objetos
-- **RecetaContext**: Gestiona el estado de las recetas
-
-### Componentes
-- **Componentes organizados por funcionalidad** en carpetas separadas
-- **Material UI** para componentes de interfaz consistentes
-- **Componentes reutilizables** como `MiBoton.jsx`
-
-## 🎨 Estilos
-
-La aplicación utiliza una combinación de:
-- **CSS personalizado** (App.css, index.css)
-- **Material UI** para componentes estilizados
-- **Estilos inline** para navegación personalizada
-
-## 📄 Dependencias Principales
-
-### Dependencias de Producción
-- `react` & `react-dom`: Biblioteca principal de React
-- `react-router-dom`: Enrutamiento para aplicaciones React
-- `@mui/material`, `@mui/icons-material`: Material UI para componentes
-- `@emotion/react`, `@emotion/styled`: Motor de CSS-in-JS para Material UI
-
-### Dependencias de Desarrollo
-- `vite`: Herramienta de construcción y desarrollo
-- `eslint`: Linter para JavaScript/React
-- `@vitejs/plugin-react`: Plugin de Vite para React
-
-## 🚀 Despliegue
-
-Para construir la aplicación para producción:
-
-```bash
-npm run build
+## Credenciales de Acceso
+```
+Usuario: admin
+Contraseña: admin123
 ```
 
-Los archivos construidos se generarán en la carpeta `dist/` y estarán listos para ser desplegados en cualquier servidor web estático.
+## Estructura del Proyecto
 
-## 📚 Recursos Adicionales
+```
+src/
+├── components/
+│   ├── auth/
+│   │   └── ProtectedRoute.jsx
+│   ├── recetas/
+│   │   ├── RecetaCard.jsx
+│   │   ├── RecetasList.jsx
+│   │   ├── RecetaDetalle.jsx
+│   │   ├── IngredientesList.jsx
+│   │   ├── RecetaDelDia.jsx
+│   │   ├── TipsCocina.jsx
+│   │   ├── Testimonios.jsx
+│   │   └── Estadisticas.jsx
+│   └── layout/
+│       └── Navbar.jsx
+├── contexts/
+│   ├── RecetaContext.jsx
+│   ├── AuthContext.jsx
+│   ├── FavoritosContext.jsx
+│   └── ThemeContext.jsx
+├── data/
+│   ├── recetas.json
+│   ├── login.json
+│   └── protected-data.json
+├── pages/
+│   ├── InicioPage.jsx
+│   ├── RecetasListPage.jsx
+│   ├── RecetaDetallePage.jsx
+│   ├── FavoritosPage.jsx
+│   ├── TipsPage.jsx
+│   ├── ContactoPage.jsx
+│   └── LoginPage.jsx
+├── App.jsx
+└── main.jsx
+```
 
-- [Guía de Material UI](./GUIA-MATERIAL-UI.md)
-- [Guía de React Router DOM](./GUIA-REACT-ROUTER-DOM.md)
-- [Documentación de Vite](https://vitejs.dev/)
-- [Documentación de React](https://react.dev/)
+## Funcionalidades
 
-## 🤝 Contribución
+### Sistema de Autenticación
+- Login con validación de credenciales
+- Protección de rutas privadas con ProtectedRoute
+- Persistencia de sesión con localStorage
+- Logout con redirección automática
 
-1. Fork el proyecto
-2. Crea una rama para tu funcionalidad (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+### Página de Inicio (/)
+- Hero section con llamado a la acción
+- Estadísticas de la aplicación (recetas, usuarios, calificaciones)
+- Receta destacada del día con imagen y detalles completos
+- Sección de características principales
+- Tips de cocina destacados
+- Testimonios de usuarios con sistema de calificación
+- Call to action final
+
+### Listado de Recetas (/recetas)
+- Grid responsivo de tarjetas de recetas
+- Búsqueda global integrada en la navbar (busca en título, descripción y categoría)
+- Filtros por dificultad (Todas, Fácil, Media, Difícil)
+- Botón de favorito en cada tarjeta
+- Contador dinámico de resultados
+- Cada tarjeta muestra: imagen, título, descripción, tiempo, dificultad y porciones
+- Animaciones hover con elevación
+- Manejo de estado vacío cuando no hay resultados
+
+### Detalle de Receta (/recetas/:id)
+- Imagen destacada de la receta
+- Información completa: título, descripción, tiempo, dificultad, porciones
+- Lista detallada de ingredientes con cantidades y unidades
+- Pasos de preparación numerados
+- Botón para volver al listado
+- Manejo de error 404 (receta no encontrada)
+- Animación fade-in al cargar
+
+### Favoritos (/favoritos)
+- Sistema de gestión de recetas favoritas
+- Persistencia en localStorage
+- Botón para agregar/quitar favoritos desde cualquier tarjeta
+- Contador de recetas favoritas
+- Estado vacío con mensaje motivacional
+- Mismas funcionalidades que el listado principal
+
+### Tips de Cocina (/tips)
+- 6 categorías de consejos profesionales:
+  - Al Horno
+  - A la Parrilla
+  - En Olla (Guisos y Salsas)
+  - Técnicas de Corte
+  - Sazonado y Condimentos
+  - Organización (Mise en Place)
+- Accordions interactivos con expand/collapse
+- Múltiples consejos detallados por categoría
+- Iconos descriptivos para cada sección
+
+### Contacto (/contacto)
+- Formulario con validación de campos requeridos
+- Campos: Nombre, Email, Mensaje
+- Simulación de envío con feedback visual (Alert)
+- Información de contacto adicional
+- Sección de preguntas frecuentes
+- Layout en grid responsive
+
+### Navegación Global
+- Navbar presente en todas las páginas
+- Menú con 5 secciones: Inicio, Recetas, Favoritos, Tips, Contacto
+- Búsqueda integrada en navbar
+- Indicador visual de página activa
+- Botón de cambio de tema (claro/oscuro)
+- Información de usuario autenticado
+- Botón de logout
+- Responsive con menú adaptativo
+
+### Gestión de Estado (Context API)
+- **RecetaContext**: Manejo global de recetas con carga desde JSON
+- **AuthContext**: Autenticación simulada con localStorage
+- **FavoritosContext**: Gestión de favoritos con persistencia
+- **ThemeContext**: Control de tema claro/oscuro con localStorage
+
+### Tema y Diseño
+- **Modo Claro**: Diseño minimalista con fondo blanco suave (#F9F9F9)
+- **Modo Oscuro**: Tema elegante con fondo oscuro (#121212)
+- Paleta de colores consistente (Primary: Negro/Gris, Secondary: Verde)
+- Flat design con bordes sutiles
+- Transiciones suaves en todos los elementos
+- Animaciones hover profesionales
+- Sistema de espaciado consistente
+
+## Screenshots
+
+### Login
+<!-- AQUÍ VA: screenshots/login.png -->
+![Login](screenshots/login.png)
+
+### Página de Inicio
+<!-- AQUÍ VA: screenshots/inicio.png -->
+![Inicio](screenshots/inicio.png)
+
+### Listado de Recetas
+<!-- AQUÍ VA: screenshots/listado.png -->
+![Listado](screenshots/listado.png)
+
+### Detalle de Receta
+<!-- AQUÍ VA: screenshots/detalle.png -->
+![Detalle](screenshots/detalle.png)
+
+### Favoritos
+<!-- AQUÍ VA: screenshots/favoritos.png -->
+![Favoritos](screenshots/favoritos.png)
+
+### Tips de Cocina
+<!-- AQUÍ VA: screenshots/tips.png -->
+![Tips](screenshots/tips.png)
+
+### Contacto
+<!-- AQUÍ VA: screenshots/contacto.png -->
+![Contacto](screenshots/contacto.png)
+
+### Modo Claro
+<!-- AQUÍ VA: screenshots/dark-mode.png -->
+![Modo Oscuro](screenshots/dark-mode.png)
+
+## Datos de la Aplicación
+
+### Recetas Incluidas
+1. **Pasta Carbonara** - Media - 30 minutos - 4 porciones
+2. **Ensalada César** - Fácil - 20 minutos - 2 porciones
+3. **Pizza Margherita** - Media - 45 minutos - 4 porciones
+4. **Brownie de Chocolate** - Fácil - 40 minutos - 8 porciones
+5. **Sopa de Tomate** - Fácil - 35 minutos - 4 porciones
+6. **Tacos al Pastor** - Difícil - 50 minutos - 6 porciones
+
+Cada receta incluye: título, descripción, imagen, tiempo de preparación, nivel de dificultad, número de porciones, lista completa de ingredientes (con cantidades y unidades) y pasos de preparación detallados.
+
+## Características Técnicas Destacadas
+
+### Rutas Implementadas
+- `/login` - Autenticación (ruta pública)
+- `/` - Inicio (ruta protegida)
+- `/recetas` - Listado con búsqueda y filtros (ruta protegida)
+- `/recetas/:id` - Detalle dinámico (ruta protegida)
+- `/favoritos` - Gestión de favoritos (ruta protegida)
+- `/tips` - Consejos de cocina (ruta protegida)
+- `/contacto` - Formulario de contacto (ruta protegida)
+
+### Hooks de React Utilizados
+- `useState` - Gestión de estado local
+- `useEffect` - Efectos secundarios y carga de datos
+- `useContext` - Consumo de contextos
+- `useNavigate` - Navegación programática
+- `useParams` - Parámetros dinámicos de URL
+- `useLocation` - Información de ruta actual
+- `useSearchParams` - Query strings para búsqueda
+- `useMemo` - Optimización de cálculos (tema)
+
+### Componentes de Material-UI
+Container, Box, Grid, Stack, Card, CardMedia, CardContent, CardActions, Typography, Button, IconButton, Chip, TextField, InputAdornment, AppBar, Toolbar, Menu, MenuItem, ToggleButtonGroup, ToggleButton, Accordion, AccordionSummary, AccordionDetails, Paper, Alert, CircularProgress, Avatar, Rating, Fade
+
+### Persistencia de Datos
+- Sesión de usuario (localStorage)
+- Recetas favoritas (localStorage)
+- Preferencia de tema (localStorage)
+
+### Manejo de Estados
+- Estados de carga (loading)
+- Estados de error (404, errores de red)
+- Estados vacíos (sin resultados, sin favoritos)
+- Feedback visual de acciones (envío de formulario)
+
+## Funcionalidades Extra Implementadas
+
+✅ Página de inicio completa con hero, estadísticas y testimonios  
+✅ Sistema de favoritos con persistencia  
+✅ Búsqueda global en navbar  
+✅ Filtros por dificultad  
+✅ Página de tips con accordions  
+✅ Página de contacto con formulario  
+✅ Sistema de autenticación completo  
+✅ Modo oscuro/claro con toggle  
+✅ Animaciones y transiciones suaves  
+✅ Manejo de errores 404  
+✅ Estados de carga y vacío  
+✅ Diseño minimalista flat  
+✅ Responsive design  
+
+## Buenas Prácticas Aplicadas
+
+✅ Componentes modulares y reutilizables  
+✅ Separación de responsabilidades (Context, Components, Pages)  
+✅ Nomenclatura clara y consistente  
+✅ Custom hooks (useRecetas, useAuth, useFavoritos, useThemeMode)  
+✅ Código limpio y organizado  
+✅ Estructura de carpetas lógica  
+✅ Manejo adecuado de errores  
+✅ Validación de formularios  
+✅ Optimización de renderizado  
+✅ PropTypes implícitos mediante destructuring  
+
+## Autor
+
+**[Maxima Vanesa Caceres Alba]**  
+Email: [maximavanecaceres@gmail.com]   
 
 ---
 
-⚡ **Desarrollado con Vite + React para un desarrollo rápido y eficiente**
+**Fecha de Entrega**: [17/11/25]  
+**Institución**: [Universidad Tecnologica Nacional (UTN)]  
+**Asignatura**: Programación IV
+
+---
+
+## Nota Final
+
+Este proyecto supera ampliamente los requisitos mínimos del trabajo práctico, implementando funcionalidades avanzadas como sistema de autenticación, gestión de favoritos, búsqueda global, filtros interactivos, modo oscuro/claro, y múltiples páginas adicionales (Inicio, Tips, Contacto). Se aplicaron las mejores prácticas de desarrollo React y se logró un diseño profesional y minimalista.
