@@ -160,35 +160,35 @@ src/
 
 ### Login
 <!-- AQUÍ VA: screenshots/login.png -->
-![Login](screenshots/login.png)
+![Login]([screenshots/login.png](https://github.com/user-attachments/assets/2310e370-661e-489e-affc-6978e5f80773))
 
 ### Página de Inicio
 <!-- AQUÍ VA: screenshots/inicio.png -->
-![Inicio](screenshots/inicio.png)
+![Inicio]([screenshots/inicio.png](https://github.com/user-attachments/assets/394483f9-4ef0-4258-bdd8-1b411e312dba))
 
 ### Listado de Recetas
 <!-- AQUÍ VA: screenshots/listado.png -->
-![Listado](screenshots/listado.png)
+![Listado]([screenshots/listado.png](https://github.com/user-attachments/assets/e4a92066-9786-4c62-b2b0-6203a3febca7))
 
 ### Detalle de Receta
 <!-- AQUÍ VA: screenshots/detalle.png -->
-![Detalle](screenshots/detalle.png)
+![Detalle]([screenshots/detalle.png](https://github.com/user-attachments/assets/8ce1de64-ffc7-4821-800c-9091b8cbe255))
 
 ### Favoritos
 <!-- AQUÍ VA: screenshots/favoritos.png -->
-![Favoritos](screenshots/favoritos.png)
+![Favoritos]([screenshots/favoritos.png](https://github.com/user-attachments/assets/55634884-b00a-4f89-a256-160f503bccbf))
 
 ### Tips de Cocina
 <!-- AQUÍ VA: screenshots/tips.png -->
-![Tips](screenshots/tips.png)
+![Tips]([screenshots/tips.png](https://github.com/user-attachments/assets/4b607689-1e03-4e4e-85ca-91e7b7022e6b))
 
 ### Contacto
 <!-- AQUÍ VA: screenshots/contacto.png -->
-![Contacto](screenshots/contacto.png)
+![Contacto]([screenshots/contacto.png](https://github.com/user-attachments/assets/ab0ac588-ee78-4fc7-bc2c-0f8df24eb4e2))
 
 ### Modo Claro
 <!-- AQUÍ VA: screenshots/dark-mode.png -->
-![Modo Oscuro](screenshots/dark-mode.png)
+![Modo Oscuro]([screenshots/dark-mode.png](https://github.com/user-attachments/assets/031292b4-3de4-4da8-8086-db990f95eff3))
 
 ## Datos de la Aplicación
 
